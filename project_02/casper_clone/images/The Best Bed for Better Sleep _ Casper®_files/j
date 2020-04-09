@@ -1,0 +1,5 @@
+var SSKY=function(){var b=function(){};return{fire:function(c,d){var a=new Image(1,1);a.onload=function(){a.onload=null;(d||b)()};a.src=c}}}();
+SSKY.fire('https://ib.adnxs.com/setuid?entity=437&code=d5.7ef2bab7b82e43c9ac3893448af3972a');
+SSKY.fire('https://vcore.connatix.com/cks?uid=d5.7ef2bab7b82e43c9ac3893448af3972a&pid=17');
+SSKY.fire('https://sundaysky-sync-us.teads.tv/um?eid=112&uid=d5.7ef2bab7b82e43c9ac3893448af3972a');
+SSKY.fire('https://sync.search.spotxchange.com/partner?adv_id=6434&uid=d5.7ef2bab7b82e43c9ac3893448af3972a&cb=1387205652&img=1');

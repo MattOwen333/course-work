@@ -1,0 +1,88 @@
+.main-nav {
+  display: flex;
+  background-color: #44b;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+  font-family: "Lobster", cursive;
+  font-size: 36px;
+}
+
+.sub-nav {
+  display: flex;
+}
+
+.short-width {
+  display: flex;
+}
+
+.full-width {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .short-width {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .full-width {
+    display: flex;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list a {
+  padding: 15px;
+  border-right: orchid;
+}
+
+.nav-list li:last-of-type a {
+  border-right: none;
+}
+
+.search-form {
+  display: flex;
+  flex-grow: 1;
+}
+
+input {
+  border: none;
+  padding: 15px;
+  border-bottom: #44b;
+  flex-grow: 1;
+}
+
+button {
+  border: none;
+  padding: 15px;
+}
+
+.company-name {
+  padding: 5px;
+  color: white;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+}
+
+.credit-offer {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: aquamarine;
+  font-family: "Lobster", cursive;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}

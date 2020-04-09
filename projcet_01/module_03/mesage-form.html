@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .message-form {
+        width: 480px;
+        font-size: 16px;
+        font-family: sans-serif;
+        background: #ccc;
+        border: 1px solid black;
+      }
+
+      .message-form-inputs {
+        padding: 0 1em 1em;
+      }
+
+      .message-form-inputs > * {
+        display: block;
+      }
+
+      .message-form-inputs label {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 1em 0 0.25em;
+      }
+
+      .message-form-inputs input,
+      .message-form-inputs textarea {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.5em;
+        font-family: sans-serif;
+      }
+
+      .message-form-actions {
+        padding: 1em;
+        background: #aaa;
+        overflow: auto;
+      }
+
+      .message-form-actions button {
+        float: right;
+        margin-left: 1em;
+        background: lightblue;
+        border: none;
+        box-shadow: 0 2px 6px -3px black;
+        padding: 0.5rem 1rem;
+      }
+
+      .message-form-actions button,
+      .message-form-actions i.material-icons.small {
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      .message-form-actions button i.material-icons.small {
+        margin-left: 0.5em;
+      }
+
+      .message-form-actions button:hover {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="message-form">
+      <div class="message-form-inputs">
+        <label for="message-title">Title</label>
+        <input id="message-title" type="text" name="title" />
+        <label for="message-content">Content</label>
+        <textarea
+          id="message-content"
+          name="content"
+          cols="60"
+          rows="15"
+        ></textarea>
+      </div>
+      <div class="message-form-actions">
+        <button>
+          <span>SEND</span>
+          <i class="material-icons small">send</i>
+        </button>
+        <button>
+          <span>ATTACH</span>
+          <i class="material-icons small">attach_file</i>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

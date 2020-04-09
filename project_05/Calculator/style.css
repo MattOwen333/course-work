@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 24px;
+  font-family: "Unica One", cursive;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 0;
+  border-color: 3px solid red;
+  border-radius: 55%;
+}
+
+#app h1 {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 8px;
+}
+
+.display {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* height: 160px; */
+  background-color: blue;
+  grid-column: 1/6;
+  grid-row: 1;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-row: 2/14;
+  grid-column: 1/6;
+  color: yellow;
+  font-size: 36px;
+}
+
+.calculator {
+  grid-template-rows: 180px repeat(12, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  width: 480px;
+  min-height: 720px;
+  display: grid;
+  background-color: gray;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.operations {
+  grid-column: 4/5;
+  grid-row: 1/6;
+  background-color: orange;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1;
+}
+
+.memory {
+  grid-column: 1/4;
+  grid-row: 1;
+  background-color: yellow;
+  /* display: grid;
+  grid-template-rows: 2fr 3fr; */
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.digits {
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 2/6;
+  grid-gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: orange;
+}
+
+.digits button {
+  color: orange;
+  background-color: blue;
+}
+
+.clear-all {
+  width: 40%;
+}
+
+.clear-entry {
+  width: 60%;
+}
+
+.digits :last-child {
+  grid-column: 2/4;
+}

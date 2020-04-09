@@ -1,0 +1,29 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  height 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: grey;
+}
+
+header, footer {
+  background-color: darkgray;
+  padding: 1em; 
+}
+
+
+aside {
+  width: 200px;
+}
+
+a {
+  display:flex
+  flex-direction: table-column
+
+}
